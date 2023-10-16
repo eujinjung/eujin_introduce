@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>opencv right</title>
+        <meta charset="UTF-8">
+        <style>
+            #opencvServiceImage {
+                opacity: 0;
+                transition: opacity 3s ease-in-out;
+            }
+            #serviceText {
+                color: #797979;
+                transition: color 1s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h3 align="center"><font size="5" color="#797979">||| openCV 를 이용한 서비스 |||</font></h3>
+        <img id="opencvServiceImage" src="opencv_service.png" width="92%" hspace="40">
+        <br>
+        <br>
+        <br>
+        <h3 id="serviceText" align="center"><font size="5" color="#797979">이미지를 인식하여 핸드폰으로 스캔하는 서비스</font></h3>
+        <h3 align="center"><font size="5" color="#797979">얼굴을 인식하여 다양한 효과를 적용하는 카메라 서비스</font></h3>
+        <h3 align="center"><font size="5" color="#797979">명함을 인식하여 연락처를 관리해주는 서비스</font></h3>
+
+        <script>
+            window.onload = function() {
+                var opencvServiceImage = document.getElementById("opencvServiceImage");
+                var serviceText = document.getElementById("serviceText");
+                var isVisible = false;
+
+                function toggleElements() {
+                    isVisible = !isVisible;
+                    opencvServiceImage.style.opacity = isVisible ? "1" : "0";
+                }
+
+                setInterval(toggleElements, 2000);
+            };
+        </script>
+    </body>
+</html>

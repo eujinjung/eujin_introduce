@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>self-introduce</title>
+        <link rel="stylesheet" href="introduce.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="main-bar">
+    <a href="main.html">Main</a>
+    <a href="self-introduce.html">who's Eujin?</a>
+    <a href="opencv1_main.html">Her interests?</a>
+    </div>
+    <h1>"HELLO, EUJIN WORLD!"</h1>
+    <a class="madeby" onclick="alert('안녕하세요!\n유진월드에 오신 것을 환영합니다.\n왼쪽 하단의 음악을 재생하신 뒤, 천천히 둘러보세요~^^')">made by. 202023613 정유진</a>
+    </div>
+    <div class="introduce-table">
+        <h1 id="self-introduce" align="center">자기소개서</h1>
+    <table border="1" width="50%" align="center">
+        <tr>
+          <td align="center">이름</td>
+          <td>정유진</td>
+        </tr>
+        <tr>
+          <td align="center">학번</td>
+          <td>202023613</td>
+        </tr>
+        <tr>
+          <td align="center">전공</td>
+          <td>소프트웨어전공</td>
+        </tr>
+        <tr>
+          <td align="center">연락처</td>
+          <td>010-2123-5024</td>
+        </tr>
+        <tr>
+          <td align="center">메일</td>
+          <td>pinklusha99.kku.ac.kr</a>&nbsp;&nbsp;&nbsp;<button><a href="https://kumail.konkuk.ac.kr/adfs/ls/?lc=1042&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline" target="_blank">메일보내기</a></button></td>
+        </tr>
+        <tr>
+          <td align="center">신장</td>
+          <td>168cm</td>
+        </tr>
+        <tr>
+          <td align="center">취미</td>
+          <td>골프, 등산</td>
+        </tr>
+        <tr>
+          <td align="center">학력</td>
+          <td><a href="https://www.kku.ac.kr/mbshome/mbs/wwwkr/index.do" target="new">건국대학교 글로컬캠퍼스</a> 소프트웨어전공 재학중</td>
+        </tr>
+        <tr>
+            <td align="center">IT 보유기술</td>
+            <td><ol type="1">
+                <li>C</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+                <li>R</li>
+                <li>HTML / CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>REACT-NATIVE</li>
+            </ol></td>
+        </tr>
+        <tr>
+            <td align="center">관심 분야</td>
+            <td><a href="opencv1_main.html" target="_blank">이미지 및 영상처리 딥러닝</a></td>
+        </tr>
+        <tr>
+            <td align="center">활동 사진</td>
+            <td><a href="golf.jpg" target="_blank"><img src="golf.jpg" width="auto" height="200" hspace="20"></a>
+                <a href="hiking.jpg" target="_blank"><img src="hiking.jpg" width="auto" height="200" hspace="20"></a>
+                <a href="photo5.jpg" target="_blank"><img src="photo5.jpg" width="auto" height="200" hspace="20"></a>
+                <a href="photo6.jpg" target="_blank"><img src="photo6.jpg" width="auto" height="200" hspace="20"></a>
+            </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      const tableRows = document.querySelectorAll("table tr");
+
+      tableRows.forEach((row, index) => {
+          row.style.animationDelay = `${index * 0.2}s`;
+          row.classList.add("reveal-animation");
+      });
+  </script>
+
+    </body>
+</html>

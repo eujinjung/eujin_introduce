@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="header">
+        <div class="main-bar">
+            <a href="main.html">Main</a>
+            <a href="self-introduce.html">who's Eujin?</a>
+            <a href="opencv1_main.html">Her interests?</a>
+    </div>
+    <h1>"HELLO, EUJIN WORLD!"</h1>
+    <a class="madeby" onclick="alert('안녕하세요!\n유진월드에 오신 것을 환영합니다.\n왼쪽 하단의 음악을 재생하신 뒤, 천천히 둘러보세요~^^')">made by. 202023613 정유진</a>
+    </div>
+    <div class="canvas-title">
+        <h1>너의 그림을 보여줘</h1>
+    </div>
+    <div class="center-canvas">
+        <div id="canvas-container">
+        <canvas id="myCanvas" width="300" height="300"></canvas>
+    </div>
+</div>
+<div class="center-canvas">
+    <div class="button-container">
+        <button id="drawButton">그림 그리기</button>
+        <button id="uploadButton">업로드 하기</button>
+    </div>
+    </div>
+    <div class="center-canvas">
+    <div id="gallery">
+        <table class="save-canvas">
+            <thead>
+                <tr>
+                    <th>저장된 그림</th>
+                    <th>업로드 시간</th>
+                </tr>
+            </thead>
+            <tbody id="galleryBody"></tbody>
+        </table>
+    </div>
+</div>
+    <script src="canvas.js"></script>
+</body>
+</html>

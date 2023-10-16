@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>opencv right</title>
+        <meta charset="UTF-8">
+        <style>
+            .image-container {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                max-width: 800px;
+                transition: transform 0.3s ease-in-out;
+            }
+            .image-container:hover {
+                transform: scale(1.2);
+            }
+            .image-container img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+            .image-caption {
+                text-align: center;
+                margin-top: 10px;
+                color: #797979;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h3 align="center"><font size="5" color="#797979">||| openCV + YOLO 알고리즘 |||</font></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="image-container">
+            <img src="yolo1.png">
+            <div class="image-caption">openCV와 YOLO 알고리즘을 사용해 거실 이미지를 인식시킨 모습</div>
+        </div>
+        <h3 align="center"><font size="5" color="#797979">chair, sofa, tvmonitor 등 다양하게 인식된 모습을 확인할 수 있다.</font></h3> 
+        <h3 align="center"><font size="5" color="#797979">confidence 값을 높이면 정확하게 인식된 값만 나타내고, <br>값을 낮추면 정확도가 낮아도 인식 값을 나타낸다.</font></h3>
+    </body>
+</html>

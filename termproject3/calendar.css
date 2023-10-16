@@ -1,0 +1,162 @@
+body{
+    margin:0;
+    background-color: #ffffef;
+    background-image: url(yellow_k.png);
+    background-size: 100%;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: black;
+    padding:20px;
+    padding-top: 10px;
+    background: white;
+    border-bottom: 3px solid black;
+}
+
+.main-bar{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.main-bar a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    border: 1px black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.main-bar a:hover{
+    font-size: 25px;
+    transition: 0.5s;
+    color:#FF00B3;
+
+}
+
+
+.header h1{
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    font: bold;
+}
+
+.madeby{
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 900;
+    color:black;
+}
+
+.madeby:hover{
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.5s;
+    color:#FF00B3;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.header{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width:1000px;
+    height: 500px;
+  }
+  
+  caption {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #A88686;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  th {
+    background-color: #FFE781;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #F5F5F5;
+  }
+  
+  td:hover {
+    background-color: #E8E8E8;
+  }
+  
+  td p {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+
+ 
+select {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    appearance: none; 
+    -webkit-appearance: none; 
+    outline: none; 
+    cursor: pointer;
+  }
+  
+
+  option {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  
+  option:checked {
+    background-color: #e0e0e0;
+  }
+
+  table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+}

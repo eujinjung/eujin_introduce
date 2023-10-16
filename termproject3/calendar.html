@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+  <div class="header">
+    <div class="main-bar">
+        <a href="main.html">Main</a>
+        <a href="self-introduce.html">who's Eujin?</a>
+        <a href="opencv1_main.html">Her interests?</a>
+</div>
+<h1>"HELLO, EUJIN WORLD!"</h1>
+<a class="madeby" onclick="alert('안녕하세요!\n유진월드에 오신 것을 환영합니다.\n왼쪽 하단의 음악을 재생하신 뒤, 천천히 둘러보세요~^^')">made by. 202023613 정유진</a>
+</div>
+<h2><font color="#AC7373">&nbsp;&nbsp;EUJIN's CALENDAR
+    &nbsp;&nbsp;
+    <select id="monthSelect" onchange="updateCalendar()">
+        <option value="1">2023년 1월</option>
+        <option value="2">2023년 2월</option>
+        <option value="3">2023년 3월</option>
+        <option value="4">2023년 4월</option>
+        <option value="5">2023년 5월</option>
+        <option value="6" selected>2023년 6월</option>
+        <option value="7">2023년 7월</option>
+        <option value="8">2023년 8월</option>
+        <option value="9">2023년 9월</option>
+        <option value="10">2023년 10월</option>
+        <option value="11">2023년 11월</option>
+        <option value="12">2023년 12월</option>
+    </select>
+    <div id="calendar"></div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

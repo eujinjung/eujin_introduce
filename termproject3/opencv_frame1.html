@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>opencv left</title>
+        <meta charset="UTF-8">
+        <style>
+            #faceImage {
+                opacity: 0;
+                transition: opacity 3s ease-in-out;
+            }
+            #interestText {
+                color: #797979;
+                transition: color 1s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h3 align="center"><font size="5" color="#797979">||| openCV 에 관심을 갖게 된 계기 |||</font></h3>
+        <img id="faceImage" src="faceid.png" hspace="55">
+        <h3 id="interestText" align="center"><font size="5" color="#797979">애플 FACE ID, 네이버 렌즈 등 이미지 인식 기술을 접하며<br>자연스럽게 이미지 및 영상처리에 관심이 생겼습니다.</font></h3>
+        <h3 align="center"><font size="5" color="#797979">이미지 및 영상처리 라이브러리 중 하나인 openCV를 이용하여<br>다양한 이미지 및 영상들을 인식해 해당 정보를 불러오는 등<br>일상에 편리한 어플을 만드는 것이 목표입니다.</font></h3>
+
+        <script>
+            window.onload = function() {
+                var faceImage = document.getElementById("faceImage");
+                var interestText = document.getElementById("interestText");
+                var isVisible = false;
+                var currentIndex = 0;
+                var colors = ["#FF0000", "#00FF00", "#0000FF"];
+
+                function toggleElements() {
+                    isVisible = !isVisible;
+                    faceImage.style.opacity = isVisible ? "1" : "0";
+                    interestText.style.color = colors[currentIndex];
+                    currentIndex = (currentIndex + 1) % colors.length;
+                }
+
+                setInterval(toggleElements, 2000);
+            };
+        </script>
+    </body>
+</html>

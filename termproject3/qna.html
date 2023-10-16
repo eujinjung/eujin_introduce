@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>qna</title>
+        <link rel="stylesheet" href="qna.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="header">
+            <div class="main-bar">
+                <a href="main.html" target="_top">Main</a>
+                <a href="self-introduce.html" target="_top">who's Eujin?</a>
+                <a href="opencv1_main.html" target="_top">Her interests?</a>
+        </div>
+        <h1>"HELLO, EUJIN WORLD!"</h1>
+        <a class="madeby" onclick="alert('안녕하세요!\n유진월드에 오신 것을 환영합니다.\n왼쪽 하단의 음악을 재생하신 뒤, 천천히 둘러보세요~^^')">made by. 202023613 정유진</a>
+        </div>
+        <fieldset>
+            <legend id="qna">질문과 의견은 개발자에게 큰 도움이 됩니다!</legend>
+            <table>
+              <tr>
+                <td><label for="radio">웹페이지에 대한 별점</label></td>
+                <td>
+                <input type="radio" name="radio" value="radio5"> ★ ★ ★ ★ ★ </label>
+                <br>
+                <input type="radio" name="radio" value="radio4"> ★ ★ ★ ★ ☆ </label>
+                <br>
+                <input type="radio" name="radio" value="radio3"> ★ ★ ★ ☆ ☆ </label>
+                <br>
+                <input type="radio" name="radio" value="radio2"> ★ ★ ☆ ☆ ☆ </label>
+                <br>
+                <input type="radio" name="radio" value="radio1"> ★ ☆ ☆ ☆ ☆ </label>
+              </td>
+              </tr>
+                    <tr>
+                    <td width="300"><label for="comment">질문과 의견을 자유롭게 남겨주세요.</label></td>
+                    <td><textarea cols="80" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="email">메일을 남겨주시면 답변을 드립니다.</label></td>
+                    <td><input id="email" type="email"></td>
+                </tr>
+            </table>
+            <br>
+            <a onclick="alert('질문 및 의견을 제출해주셔서 감사합니다!');" href="qna.html"><input type="submit" class="submit"></a>
+        </fieldset>
+    </body>
+</html>

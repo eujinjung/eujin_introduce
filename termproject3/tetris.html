@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>테트리스</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tetris.css">
+    <script type="text/javascript" src="tetris.js"></script>
+  </head>
+  <body>
+    <header class="sticky-header">
+        <div class="header">
+            <div class="main-bar">
+                <a href="main.html">Main</a>
+                <a href="self-introduce.html">who's Eujin?</a>
+                <a href="opencv1_main.html">Her interests?</a>
+        </div>
+        <h1>"HELLO, EUJIN WORLD!"</h1>
+        <a class="madeby" onclick="alert('안녕하세요!\n유진월드에 오신 것을 환영합니다.\n왼쪽 하단의 음악을 재생하신 뒤, 천천히 둘러보세요~^^')">made by. 202023613 정유진</a>
+        </div>
+    </header>
+<div class="tetris-title">
+    <h1 class="tetris-name">재밌는 테트리스 한판 !</h1>
+</div>
+    <div class="tetris-center">
+        <div class="wrapper-container">
+        <span class="tetris-container">
+            <canvas id="stage" width="250px" height="500px" style="background-color:black;">
+            </canvas>
+            <span class="tetris-panel-container">
+              <p>Next:</p>
+                <canvas id="next" width="150px" height="150px" style="background-color:black;">
+                </canvas>
+              <p>LINES:<span id="lines">0</span></p>
+              <p><span id="message"></span></p>
+              <div class="tetris-panel-container-padding"></div>
+              <table class="tetris-button-panel">
+                <tr>
+                  <td></td>
+                  <td id="tetris-rotate-button" class="tetris-button">↻</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td id="tetris-move-left-button"class="tetris-button">←</td>
+                  <td id="tetris-fall-button"class="tetris-button">↓</td>
+                  <td id="tetris-move-right-button"class="tetris-button">→</td>
+                </tr>
+              </table>
+            </span>
+        </span>
+    </div>
+</div>
+    <script>
+      var tetris = new Tetris();
+      tetris.startGame();
+    </script>
+  </body>
+</html>
